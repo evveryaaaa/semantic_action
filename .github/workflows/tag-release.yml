@@ -3,7 +3,11 @@ permissions:
   contents: write
   actions: write
 on:
-  pull_request: 
+  pull_request:
+    types:  
+      - opened
+      - closed
+      - synchronize
   workflow_dispatch:
     inputs:
       prerelease:
